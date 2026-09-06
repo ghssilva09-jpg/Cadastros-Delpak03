@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro Exclusivo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <h1 class="titulo-principal">
+        Cadastre-se de forma rápida e segura
+    </h1>
+
+
+    <main class="principal" id="secao-principal">
+
+        <!-- TEXTO DA ESQUERDA -->
+        <section class="texto">
+
+            <h2>Faça seu cadastro</h2>
+
+            <p>
+                Preencha o formulário ao lado com suas informações
+                para realizar seu cadastro com total segurança.
+            </p>
+
+            <p>
+                Os dados solicitados são necessários para registrar
+                corretamente suas informações e manter um cadastro
+                organizado no sistema.
+            </p>
+
+            <p>
+                Os campos marcados com
+                <strong class="obrigatorio">*</strong>
+                são obrigatórios. O telefone fixo é opcional.
+            </p>
+
+        </section>
+
+
+        <!-- FORMULÁRIO DA DIREITA -->
+        <section class="formulario">
+
+            <h2>Criar Conta</h2>
+
+            <form id="formCadastro">
+
+                <!-- NOME -->
+                <label for="nome">
+                    Nome
+                    <span class="obrigatorio">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <!-- CNPJ -->
+                <label for="cnpj">
+                    CNPJ
+                    <span class="obrigatorio">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="cnpj"
+                    name="cnpj"
+                    placeholder="00.000.000/0000-00"
+                    maxlength="18"
+                    required
+                >
+
+
+                <!-- E-MAIL -->
+                <label for="email">
+                    E-mail
+                    <span class="obrigatorio">*</span>
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                >
+
+
+                <!-- CELULAR -->
+                <label for="celular">
+                    Celular com DDD
+                    <span class="obrigatorio">*</span>
+                </label>
+
+                <div class="campo-celular">
+
+                    <input
+                        type="tel"
+                        id="celular"
+                        name="celular"
+                        placeholder="(11) 99999-9999"
+                        maxlength="15"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="botao-validar"
+                        id="botaoValidar"
+                    >
+                        Validar
+                    </button>
+
+                </div>
+
+
+                <!-- TELEFONE FIXO -->
+                <label for="telefone">
+                    Telefone fixo
+                    <span class="opcional">(opcional)</span>
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(11) 3333-3333"
+                    maxlength="14"
+                >
+
+
+                <!-- BOTÃO CADASTRAR -->
+                <button
+                    type="submit"
+                    class="botao-cadastrar"
+                >
+                    CADASTRAR
+                </button>
+
+
+                <div
+                    id="mensagem"
+                    class="mensagem"
+                ></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
